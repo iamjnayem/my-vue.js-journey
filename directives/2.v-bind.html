@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind | vue.js</title>
+    <style>
+        .nature-style{
+            width: 200px;
+
+        }
+        #app
+        {
+            border: dashed black 1px;
+            padding: 0 10px 10px 10px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>v-bind Image source Example</h1>
+    <div id="app">
+        <p>The browser finds the src attribute value from the vue instance with the use of v-bind</p>
+        <img v-bind:src="url" v-bind:class="nature">
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data: () => {
+                return {
+                    url: "https://t.ly/lNutO",
+                    nature: 'nature-style'
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+</html>

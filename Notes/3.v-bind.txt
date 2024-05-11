@@ -1,0 +1,28 @@
+Vue v-bind Directive:
+============================
+1. You have already seen that a basic Vue setup consists of a Vue instance and we can access it from the <div id='app'> tag with {{ }} or v-bind directive. 
+
+on this page we will explain v-bind directive in more detail.
+
+The v-bind directive lets us bind an html attribute to data in the vue instance. This makes it easy to change the attribute value dynamically.
+
+example: 
+<div v-bind:[attribute]="[Vue data]"></div>
+
+The src attribute value of an <img> tag is taken from the vue instance data property `url`:
+<img v-bind:src='url'>
+
+CSS Binding:
+==================
+we can use the v-bind directive to do in-line styling and modify classes dynamically. We will show you briefly how to do that in this section, and later in this tutorial, on the css binding page, we will explain this in more detail.
+
+Bind Style
+===========
+In-line styling with Vue is done by binding the style attribute to the Vue with v-bind.
+
+Example:
+The font size depends onthe vue data property 'size'
+
+<div v-bind:style="{fontSize: size}>Text</div>
+
+

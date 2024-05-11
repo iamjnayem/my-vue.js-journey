@@ -1,0 +1,27 @@
+Vue Diretives:
+=======================
+Vue directives are special html attributes with the prefix v- that give the html tag extra functionality.
+
+Vue directives connect to the vue instance to create dynamic and reactive user interfaces. 
+
+With vue, creating responsive pages is much easier and requires less code compared to traditional javascript methods. 
+
+#list of Vue Diretives:
+===============================
+v-bind => conects an attribute in an html tag to a data variable inside the vue instance.
+
+v-if => creates html tag depending on a condition. directive v-else-if and v-else are used together with v-if directive
+
+v-show => specifies if an html element should be visible or not depending on a condition
+
+v-for => creates a list of tages based on an array in vue instance using a for loop 
+
+v-on => connects an event on an html tag to a js expression or a vue instance method. we can also define more specifically how our page should react to a certain eventy by using event-modifiers***. 
+
+
+v-model => used in html forms with tags like <form> <input> and <button>. Creates a two way binding an input element and a vue instance data propery. 
+
+
+
+
+

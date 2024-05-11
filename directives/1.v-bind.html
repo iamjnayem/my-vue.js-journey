@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        div{
+            margin: 10px;
+            padding: 10px;
+            border: solid black 1px;
+            display: inline-block;
+        }
+
+        .pinkBG{
+            background-color: lightpink;
+        }
+        .purpleBG{
+            background-color: purple;
+            color: white;
+        }
+        .pasteBG{
+            background-color: #00cc99;
+            color: white;
+        }  
+        .goldenBG{
+            background-color: gold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>V-bind Example</h1>
+    <p>The brwoser finds the class name inside the vue instance</p>
+
+    <div id="app">
+        <p>Everything inside the div element with id='app' can use data from the vue instance</p>
+
+        <div v-bind:class="purple">
+            it's background should be purple.
+        </div>
+
+        <div v-bind:class="golder">
+            it's background should be golden
+        </div>
+
+        <div v-bind:class="paste">
+            it's background should be paste.
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+       const app = Vue.createApp({
+        data: () => {
+            return {
+
+                purple: 'purpleBG',
+                golder: 'goldenBG',
+                paste: 'pasteBG'
+            }
+        }
+       });
+
+       app.mount('#app')
+    </script>
+</body>
+</html>

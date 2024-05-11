@@ -1,0 +1,42 @@
+Introduction:-
+=====================
+Vue.js is a javascript framework. it can be added to an html page with a <script> tag. Vue extends html attributes with directives, and bind data to html with expressions.
+
+it is a front end framework written in javascript. Similar frameworks to Vue is Angular. React also serve the similar purpose though it is a javascript library.
+
+Vue is distributed as a javascript file, and can be added to a web page with a script tag:
+
+Example:
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+Purpose of Vue.js:
+===================
+#it is simple and easy to use
+#it is able to handle simple & complex both projects
+#open source
+#vue take cares of rendering with updated data
+#two way data binding & centralized state management
+
+Options Api
+==============
+There are 2 different ways to write vue.js 
+1) option api 
+2) composition api 
+
+
+Text Interpolation:
+==========================
+Text interpolation is when text is taken from the vue instance to show on the web page. 
+
+The browser receives the page with the code inside:
+<div id='app'> {{ message }} </div>
+
+Then the browser finds the text inside the 'message' property of the vue instance and translates the Vue code into this:
+
+<div id='app'>Hello World! </div>
+
+Javascript in Text Interpolation:
+======================================
+Using Js syntax to add a random number to the message inside the div element
+
+
